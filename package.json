@@ -1,10 +1,21 @@
 {
-  "name": "chat-example",
-  "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "name": "nightlifeapp",
+  "version": "1.0.0",
+  "description": "fcc nightlife app",
   "main": "server.js",
-  "repository": "",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btheth/fcc-nightlife-app.git"
+  },
+  "author": "btheth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btheth/fcc-nightlife-app/issues"
+  },
   "dependencies": {
     "async": "~0.2.8",
     "bcrypt-nodejs": "0.0.3",
