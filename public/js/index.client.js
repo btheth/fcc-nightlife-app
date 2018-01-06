@@ -32,8 +32,8 @@ $(document).ready(function() {
                     }
                     
                     html += '<div class=\'table-div\'><table id=\'' + data[i].id + '\'><tr><td class=\'pic\' rowspan=\'2\'><img class=\'venue-img\' src=\'';
-                    html += data[i].image_url + '\' alt=\'(venue image not found)\'></td><td class=\'col-2\'><button class=\'' + goingClass + '\' value=\'' + data[i].id + '\'>going ' + data[i].going + '</button>';
-                    html += '<button class=\'' + interestedClass + '\' value=\'' + data[i].id + '\'>interested ' + data[i].interested + '</button></td>';
+                    html += data[i].image_url + '\' alt=\'(venue image not found)\'></td><td class=\'col-2\'><button class=\'' + goingClass + '\' value=\'' + data[i].id + '\'>going: ' + data[i].going + '</button>';
+                    html += '<button class=\'' + interestedClass + '\' value=\'' + data[i].id + '\'>interested: ' + data[i].interested + '</button></td>';
                     html += '</td><td class=\'col-3\' rowspan=\'2\'><a href=\'';
                     
                     var addressLink = 'https://www.google.com/maps/search/';
