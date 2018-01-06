@@ -1,0 +1,28 @@
+doctype html
+
+html
+	head
+		title coordiNight
+		link(href='/public/css/main.css' rel='stylesheet' type='text/css')
+		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet')
+		script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+		script(type='text/javascript' src='node/jquery.cookie.js')
+		
+
+	body
+		<a href="//www.iubenda.com/privacy-policy/55828591" class="footer iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+		#header
+			span#logo-header.page-title coordiNight
+				
+		#search-group.input-group
+			input#search-box.form-control(type='text' name='location' placeholder='where are you going tonight?')
+			span.input-group-btn
+				button#go-btn.btn.btn-info(type='button') Go!
+		
+		#main
+			#location
+			#loader
+			#venue-box Enter Your Location!
+		
+		script(type='text/javascript' src='/public/js/index.client.js')

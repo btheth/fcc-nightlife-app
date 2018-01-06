@@ -1,0 +1,38 @@
+doctype html
+
+html
+    head
+        title coordiNight
+        link(href='/public/css/main.css' rel='stylesheet' type='text/css')
+        link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css')
+        script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script(type='text/javascript' src='node/jquery.cookie.js')
+
+    body
+        <a href="//www.iubenda.com/privacy-policy/55828591" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+        #main
+            center
+                #header
+                    span#logo-header.page-title Register
+
+                -if(message.length)
+                   .alert.alert-danger #{message}
+
+                #fb-login
+                    span Log in with 
+                    a.btn.btn-primary(href='/auth/facebook')
+                        span.fa.fa-facebook Facebook
+
+                form(action='register' method='post')
+                    .login-group.form-group
+                        input.form-control(type='text' name='username' placeholder='username')
+                    .login-group.form-group
+                        input.form-control(type='password' name='password' placeholder='password')
+                    .login-group.form-group
+                        input.form-control(type='password' name='passtwo' placeholder='confirm password')
+                    button.btn.btn-success.btn-lg(type='submit') Register
+                
+                span
+                    a(href='/login') log in 
+                    span |
+                    a(href='/')  home
